@@ -27,6 +27,10 @@ public class Main {
         System.out.println("Geben sie eine Nachricht ein:");
         String message = scanner.nextLine();
 
+        /*
+        Cool wäre, wenn du noch prüfst ob die eingegebene Zahl auch wirklich möglich ist, 
+        ansonsten haben wir eine ArrayIndexOutOfBoundsException :)
+        */
         Imessenger messengerToUse = messengers[mySelection];
         String messageToSend = messengerToUse.writeMessenge(message);
 
